@@ -60,25 +60,52 @@ body {
 
 
 
-/* PARTE DEL FOOTER */
-.footer {
-    font-family: "Inter", sans-serif;
+/* FOOTER DOCUMENT*/
+
+footer {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+
+  a, a:hover {
+    text-decoration: none !important;
+  }
+  
+
+  .footer-14398 {
+    padding: 5rem 0;
+    background: #000;
+    color: #777;
+  }
+
+
+  .footer-14398 .link-menu li {
+    display: inline-block;
+  }
+
+
+  .footer-14398 .link-menu li a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+  }
+
+
+  .bold_text{
     font-weight: 500;
-    color: white;
-    text-align: start;
-    padding: 20px 10px;
-    font-size: 14px;
-}
+    color: #fc246c;
+  }
 
-.footer-logo {
-    width: 120px; /* Ajusta el tamaño del logo */
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
 
-.highlight {
-    color: rgb(245, 40, 67);
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-}
+    /* LINE FOOTER COLOR */
+    .footer-14398 .line {
+      border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
+
+      
