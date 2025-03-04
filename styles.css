@@ -1,0 +1,57 @@
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
+
+body {
+    background-color: #000;
+}
+
+.category-card {
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.category-card:hover {
+    background: linear-gradient(135deg, #820000, #e22b77);
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+    margin-bottom: 2px;
+}
+
+.card-text {
+    font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: 400;;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.style_card {
+    background: linear-gradient(135deg, #820000, #e22b77);
+}
+
+/* .style_card:hover{
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 25px;
+    transition-duration: .1s;
+} */
+
+.image_card{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px
+}
