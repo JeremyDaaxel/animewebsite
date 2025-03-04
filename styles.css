@@ -1,9 +1,36 @@
 @import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     background-color: #000;
 }
+
+     /* NAVBAR */
+
+
+
+.subtitulo{
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+  transform: scaleY(1.2);
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .subtitulo {
+    text-align: center;
+    font-size: 35px; /* Ajusta según sea necesario */
+    display: block;
+  }
+}
+
+
+
 
 .category-card {
     background-color: #222;
@@ -106,6 +133,3 @@ footer {
     /* LINE FOOTER COLOR */
     .footer-14398 .line {
       border-top: 1px solid rgba(255, 255, 255, 0.2); }
-
-
-      
