@@ -10,7 +10,7 @@ body {
 
 
 .subtitulo{
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -18,18 +18,17 @@ body {
   font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
   transform: scaleY(1.2);
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
 }
 
 @media (max-width: 768px) {
   .subtitulo {
     text-align: center;
-    font-size: 35px; /* Ajusta según sea necesario */
+    font-size: 35px;
+    margin-bottom: 5px;
     display: block;
   }
 }
-
-
 
 
 .category-card {
