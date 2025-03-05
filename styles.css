@@ -6,6 +6,180 @@ body {
     background-color: #000;
 }
 
+/* HEADER - NAVBAR */
+
+/*=============== GOOGLE FONTS (Opcional si realmente usas esta fuente) ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  padding: 20px;
+  --header-height: 5rem;
+
+  /*========== Colors ==========*/
+  --white-color: #fff;
+  --black-color: #000;
+
+  /*========== Font sizes ==========*/
+  --h1-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+}
+
+/* Quita la viñeta por defecto en listas */
+ul {
+  list-style: none;
+}
+
+/*=============== NAVBAR GENERAL ===============*/
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__toggle,
+.nav__close {
+  display: flex;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*=============== MENÚ MÓVIL ===============*/
+@media screen and (max-width: 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left .4s;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+
+  /* Cuando se activa el menú */
+  .show-menu {
+    left: 0;
+  }
+}
+
+/* Lista de enlaces */
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+/* Estilos de cada enlace */
+.nav__link {
+  position: relative;
+  color: var(--white-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+  display: inline-flex;
+  align-items: center;
+  transition: opacity .4s;
+}
+
+/* Icono (por ejemplo, flecha o ícono) */
+.nav__link i {
+  font-size: 2rem;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s, visibility .4s;
+}
+
+/* Texto del enlace */
+.nav__link span {
+  position: relative;
+  transition: margin .4s;
+}
+
+/* Subrayado animado */
+.nav__link span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--white-color);
+  transition: width .4s ease-out;
+}
+
+/* Hover link */
+.nav__link:hover span {
+  margin-left: 2.5rem;
+}
+
+.nav__link:hover i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__link:hover span::after {
+  width: 100%;
+}
+
+/*=============== VISTA ESCRITORIO (>=1150px) ===============*/
+@media screen and (min-width: 1150px) {
+  /* Ajustes generales en escritorio */
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__link {
+    font-size: var(--normal-font-size);
+  }
+
+  .nav__link i {
+    font-size: 1.5rem;
+  }
+
+  /* Menú en fila en pantallas grandes */
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3.5rem;
+  }
+
+  .nav__menu {
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+    background-color: transparent;
+    transition: none;
+  }
+}
+
 
 .subtitulo{
   font-size: 3.5rem;
@@ -159,3 +333,5 @@ footer {
     /* LINE FOOTER COLOR */
     .footer-14398 .line {
       border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
+      
