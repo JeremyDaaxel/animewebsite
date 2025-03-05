@@ -17,6 +17,7 @@ body {
   display: inline-block;
 }
 
+
 @media (max-width: 768px) {
   .subtitulo {
     text-align: center;
@@ -44,8 +45,15 @@ body {
   }
 }
 
+
 .highlight_text{
   color: #fc246c;
+}
+
+
+.linea_color{
+  opacity: 100%;
+  border-top: 2px solid #fc246c;
 }
 
 
@@ -126,7 +134,7 @@ footer {
     padding: 5rem 0;
     background: #000;
     color: #777;
-    background: url('./AX_register-header.png') no-repeat center center;
+    background: url('./AX_register-header.png') no-repeat center bottom;
     background-size:contain;
   }
 
@@ -151,8 +159,3 @@ footer {
     /* LINE FOOTER COLOR */
     .footer-14398 .line {
       border-top: 1px solid rgba(255, 255, 255, 0.2); }
-
-      .linea_color{
-        opacity: 100%;
-        border-top: 2px solid #fc246c;
-      }
